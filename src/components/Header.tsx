@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Brain, Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-leadflow-gradient rounded-lg flex items-center justify-center">
               <Brain className="w-5 h-5 text-white" />
             </div>
@@ -26,7 +27,7 @@ const Header = () => {
               <span className="text-xl font-bold text-leadflow-deep-navy">LeadFlow</span>
               <span className="text-xs text-leadflow-electric-blue font-medium">AI</span>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -43,11 +44,18 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="text-leadflow-electric-blue border-leadflow-electric-blue hover:bg-leadflow-electric-blue hover:text-white">
-              Sign In
+            <Button 
+              variant="outline" 
+              className="text-leadflow-electric-blue border-leadflow-electric-blue hover:bg-leadflow-electric-blue hover:text-white"
+              asChild
+            >
+              <Link to="/login">Sign In</Link>
             </Button>
-            <Button className="bg-leadflow-gradient text-white hover:opacity-90">
-              Start Free Trial
+            <Button 
+              className="bg-leadflow-gradient text-white hover:opacity-90"
+              asChild
+            >
+              <Link to="/register">Start Free Trial</Link>
             </Button>
           </div>
 
@@ -75,11 +83,18 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="text-leadflow-electric-blue border-leadflow-electric-blue">
-                  Sign In
+                <Button 
+                  variant="outline" 
+                  className="text-leadflow-electric-blue border-leadflow-electric-blue"
+                  asChild
+                >
+                  <Link to="/login">Sign In</Link>
                 </Button>
-                <Button className="bg-leadflow-gradient text-white">
-                  Start Free Trial
+                <Button 
+                  className="bg-leadflow-gradient text-white"
+                  asChild
+                >
+                  <Link to="/register">Start Free Trial</Link>
                 </Button>
               </div>
             </nav>
