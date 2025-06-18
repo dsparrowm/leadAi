@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				leadflow: {
+					'deep-navy': 'hsl(var(--leadflow-deep-navy))',
+					'electric-blue': 'hsl(var(--leadflow-electric-blue))',
+					'bright-cyan': 'hsl(var(--leadflow-bright-cyan))',
+					'emerald': 'hsl(var(--leadflow-emerald))',
+					'slate': 'hsl(var(--leadflow-slate))',
+					'amber': 'hsl(var(--leadflow-amber))',
+					'purple': 'hsl(var(--leadflow-purple))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 5px hsl(var(--leadflow-electric-blue))' },
+					'50%': { boxShadow: '0 0 20px hsl(var(--leadflow-electric-blue))' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'slide-in-right': 'slide-in-right 0.3s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
