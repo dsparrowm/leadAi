@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState, useEffect } from "react";
-import { Brain, User, CheckMark } from "lucide-react";
+import { Brain, User, Check } from "lucide-react";
 
 const LiveAIChat = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -163,25 +163,25 @@ const LiveAIChat = () => {
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-leadflow-emerald rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckMark className="w-3 h-3 text-white" />
+                        <Check className="w-3 h-3 text-white" />
                       </div>
                       <p className="text-leadflow-slate">AI identified a qualified prospect discussing lead generation challenges</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-leadflow-emerald rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckMark className="w-3 h-3 text-white" />
+                        <Check className="w-3 h-3 text-white" />
                       </div>
                       <p className="text-leadflow-slate">Personalized response addressing specific pain points</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-leadflow-emerald rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckMark className="w-3 h-3 text-white" />
+                        <Check className="w-3 h-3 text-white" />
                       </div>
                       <p className="text-leadflow-slate">Provided relevant social proof and case study</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-leadflow-emerald rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckMark className="w-3 h-3 text-white" />
+                        <Check className="w-3 h-3 text-white" />
                       </div>
                       <p className="text-leadflow-slate">Successfully guided prospect toward demo request</p>
                     </div>

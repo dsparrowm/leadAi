@@ -1,11 +1,10 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Trending, Users, Brain, Star } from "lucide-react";
+import { TrendingUp, Users, Brain, Star } from "lucide-react";
 
 const About = () => {
   const stats = [
     { icon: Users, value: "10,000+", label: "Active Users" },
-    { icon: Trending, value: "$50M+", label: "Revenue Generated" },
+    { icon: TrendingUp, value: "$50M+", label: "Revenue Generated" },
     { icon: Brain, value: "99.7%", label: "AI Accuracy" },
     { icon: Star, value: "4.9/5", label: "Customer Rating" }
   ];

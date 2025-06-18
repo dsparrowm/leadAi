@@ -1,6 +1,5 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Search, Users, Trending, Calendar, Star } from "lucide-react";
+import { Brain, Search, Users, TrendingUp, Calendar, Star } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -23,7 +22,7 @@ const Features = () => {
       color: "text-leadflow-emerald"
     },
     {
-      icon: Trending,
+      icon: TrendingUp,
       title: "Conversion Tracking",
       description: "Real-time analytics show exactly which prospects are moving through your funnel and ready to buy.",
       color: "text-leadflow-amber"
