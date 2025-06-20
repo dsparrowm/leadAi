@@ -44,18 +44,18 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="text-leadflow-electric-blue border-leadflow-electric-blue hover:bg-leadflow-electric-blue hover:text-white"
               asChild
             >
               <Link to="/login">Sign In</Link>
             </Button>
-            <Button 
+            <Button
               className="bg-leadflow-gradient text-white hover:opacity-90"
               asChild
             >
-              <Link to="/register">Start Free Trial</Link>
+              <Link to="/dashboard">Start Free Trial</Link>
             </Button>
           </div>
 
@@ -83,14 +83,14 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="text-leadflow-electric-blue border-leadflow-electric-blue"
                   asChild
                 >
                   <Link to="/login">Sign In</Link>
                 </Button>
-                <Button 
+                <Button
                   className="bg-leadflow-gradient text-white"
                   asChild
                 >

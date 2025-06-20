@@ -7,7 +7,7 @@ import About from "@/components/About";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -21,4 +21,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default LandingPage;
