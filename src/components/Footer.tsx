@@ -1,4 +1,3 @@
-
 import { Brain } from "lucide-react";
 
 const Footer = () => {
@@ -106,12 +105,12 @@ const Footer = () => {
                   Get the latest insights on AI-powered lead generation and growth strategies.
                 </p>
               </div>
-              <div className="lg:flex-shrink-0 lg:ml-8">
-                <div className="flex max-w-md mx-auto lg:mx-0">
+              <div className="lg:flex-shrink-0 lg:ml-8 w-full max-w-md">
+                <div className="flex w-full">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 rounded-l-lg bg-white text-leadflow-deep-navy placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-leadflow-electric-blue"
+                    className="flex-1 min-w-0 px-4 py-3 rounded-l-lg bg-white text-leadflow-deep-navy placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-leadflow-electric-blue"
                   />
                   <button className="px-6 py-3 bg-leadflow-electric-blue hover:bg-leadflow-bright-cyan rounded-r-lg font-semibold transition-colors">
                     Subscribe

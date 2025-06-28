@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-leadflow-deep-navy via-leadflow-electric-blue to-leadflow-bright-cyan overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KPGcgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ij4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMSIvPgo8L2c+CjwvZz4KPC9zdmc+')] opacity-20"></div>
-      
+
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Badge */}
@@ -34,7 +34,7 @@ const Hero = () => {
             <Button size="lg" className="bg-white text-leadflow-deep-navy hover:bg-white/90 px-8 py-4 text-lg font-semibold">
               Start Your Free Trial
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-leadflow-deep-navy px-8 py-4 text-lg font-semibold">
+            <Button size="lg" variant="outline" className="border-white hover:bg-white text-leadflow-deep-navy px-8 py-4 text-lg font-semibold">
               Watch Demo
             </Button>
           </div>

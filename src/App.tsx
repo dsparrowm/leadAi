@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,6 +13,9 @@ import Campaigns from "./pages/Campaigns";
 import Leads from "./pages/Leads";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
+import CreateCampaign from "./pages/CreateCampaign";
+import Affiliates from "./pages/Affiliates";
+import AffiliateDashboard from "./pages/AffiliateDashboard";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +35,9 @@ const App = () => (
             <Route path="/leads" element={<Leads />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/create-campaign" element={<CreateCampaign />} />
+            <Route path="/affiliates" element={<Affiliates />} />
+            <Route path="/affiliate-dashboard" element={<AffiliateDashboard />} />
             {/* Catch-all route for 404 Not Found */}
             <Route path="*" element={<NotFound />} />
           </Routes>

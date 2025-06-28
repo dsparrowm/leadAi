@@ -60,7 +60,7 @@ const About = () => {
               <h3 className="text-3xl font-bold text-leadflow-deep-navy mb-6">Our Story</h3>
               <div className="space-y-4 text-leadflow-slate text-lg leading-relaxed">
                 <p>
-                  Founded in 2022 by serial entrepreneurs who had built and sold multiple B2B companies, LeadFlow AI was born from a simple frustration: traditional lead generation was broken.
+                  Founded in 2025 by serial entrepreneurs who had built and sold multiple B2B companies, LeadFlow AI was born from a simple frustration: traditional lead generation was broken.
                 </p>
                 <p>
                   Cold calling was becoming less effective. Email open rates were plummeting. And social media was turning into a noisy marketplace where genuine connections were rare.
@@ -70,14 +70,14 @@ const About = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-leadflow-deep-navy to-leadflow-electric-blue p-8 rounded-2xl text-white">
               <h4 className="text-2xl font-bold mb-6">Our Mission</h4>
               <p className="text-lg leading-relaxed opacity-90">
                 "To democratize intelligent lead generation, making it accessible for businesses of all sizes to build meaningful relationships at scale while maintaining the human touch that drives real conversions."
               </p>
               <div className="mt-6 pt-6 border-t border-white/20">
-                <p className="font-semibold">— Sarah Chen, CEO & Co-Founder</p>
+                <p className="font-semibold">— Davies Ani, CEO & Founder</p>
               </div>
             </div>
           </div>

@@ -1,17 +1,36 @@
-
 import { Button } from "@/components/ui/button";
 import { Brain, Menu } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (href: string) => (e: React.MouseEvent) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      if (location.pathname !== "/") {
+        navigate(`/${href}`);
+      } else {
+        const el = document.getElementById(href.replace('#', ''));
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          window.location.hash = href;
+        }
+      }
+      setIsMenuOpen(false);
+    }
+  };
 
   const navItems = [
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
     { name: "Team", href: "#team" },
     { name: "Pricing", href: "#pricing" },
+    { name: "Affiliates", href: "/affiliates" },
   ];
 
   return (
@@ -32,13 +51,25 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
-              >
-                {item.name}
-              </a>
+              item.href.startsWith("/") ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={location.pathname === "/" ? item.href : `/${item.href}`}
+                  className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
+                  onClick={handleNavClick(item.href)}
+                >
+                  {item.name}
+                </a>
+              )
             ))}
           </nav>
 
@@ -73,14 +104,25 @@ const Header = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 mt-4">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
+                item.href.startsWith("/") ? (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={location.pathname === "/" ? item.href : `/${item.href}`}
+                    className="text-leadflow-slate hover:text-leadflow-electric-blue transition-colors font-medium"
+                    onClick={handleNavClick(item.href)}
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
