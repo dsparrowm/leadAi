@@ -13,14 +13,14 @@ const WhyChooseUs = () => (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <Card className="bg-white/10 border-0 shadow-lg text-white">
                     <CardContent className="p-8 flex flex-col items-center">
-                        <ShieldCheck className="w-10 h-10 mb-4 text-leadflow-bright-cyan" />
+                        <ShieldCheck className="w-10 h-10 mb-4 text-leadflow-emerald" />
                         <h3 className="text-xl font-bold mb-2">Secure & Reliable</h3>
                         <p className="opacity-80">Your data is protected with enterprise-grade security and privacy standards.</p>
                     </CardContent>
                 </Card>
                 <Card className="bg-white/10 border-0 shadow-lg text-white">
                     <CardContent className="p-8 flex flex-col items-center">
-                        <Zap className="w-10 h-10 mb-4 text-leadflow-electric-blue" />
+                        <Zap className="w-10 h-10 mb-4 text-leadflow-emerald" />
                         <h3 className="text-xl font-bold mb-2">Lightning Fast AI</h3>
                         <p className="opacity-80">Our AI agents work around the clock to find and engage leads instantly.</p>
                     </CardContent>
@@ -34,7 +34,7 @@ const WhyChooseUs = () => (
                 </Card>
                 <Card className="bg-white/10 border-0 shadow-lg text-white">
                     <CardContent className="p-8 flex flex-col items-center">
-                        <ThumbsUp className="w-10 h-10 mb-4 text-leadflow-amber" />
+                        <ThumbsUp className="w-10 h-10 mb-4 text-leadflow-emerald" />
                         <h3 className="text-xl font-bold mb-2">Proven Results</h3>
                         <p className="opacity-80">Join 10,000+ users who have grown their pipeline and revenue with LeadFlow AI.</p>
                     </CardContent>

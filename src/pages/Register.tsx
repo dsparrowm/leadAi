@@ -35,7 +35,7 @@ const Register = () => {
   };
 
   const benefits = [
-    "14-day free trial, no credit card required",
+    "7-day free trial, no credit card required",
     "Access to all AI agents and features",
     "24/7 automated prospecting",
     "Dedicated customer success manager"
@@ -251,7 +251,7 @@ const Register = () => {
                 <div className="mt-6 p-4 bg-leadflow-gradient rounded-lg text-white">
                   <div className="text-center">
                     <div className="text-2xl font-bold">$0</div>
-                    <div className="text-sm opacity-90">for 14 days</div>
+                    <div className="text-sm opacity-90">for 7 days</div>
                   </div>
                 </div>
               </div>

@@ -16,6 +16,7 @@ import Settings from "./pages/Settings";
 import CreateCampaign from "./pages/CreateCampaign";
 import Affiliates from "./pages/Affiliates";
 import AffiliateDashboard from "./pages/AffiliateDashboard";
+import AffiliateRegister from "./pages/AffiliateRegister";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/create-campaign" element={<CreateCampaign />} />
             <Route path="/affiliates" element={<Affiliates />} />
             <Route path="/affiliate-dashboard" element={<AffiliateDashboard />} />
+            <Route path="/affiliate-register" element={<AffiliateRegister />} />
             {/* Catch-all route for 404 Not Found */}
             <Route path="*" element={<NotFound />} />
           </Routes>

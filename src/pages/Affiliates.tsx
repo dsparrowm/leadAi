@@ -21,10 +21,10 @@ const commissionTiers = [
 ];
 
 const mockEarnings = {
-    total: "$2,450.00",
-    thisMonth: "$320.00",
+    total: "$2,450",
+    thisMonth: "$320",
     referrals: 18,
-    pending: "$120.00",
+    pending: "$123",
 };
 
 const Affiliates = () => (
@@ -44,7 +44,7 @@ const Affiliates = () => (
                     payouts, and industry-leading commissions inspired by the best in SaaS.
                 </p>
                 <Link
-                    to="/affiliate-dashboard"
+                    to="/affiliate-register"
                     className="inline-block bg-leadflow-electric-blue text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-leadflow-deep-navy transition"
                 >
                     Become an Affiliate
@@ -214,7 +214,7 @@ const Affiliates = () => (
                     resources, and more.
                 </p>
                 <Link
-                    to="/affiliate-dashboard"
+                    to="/affiliate-register"
                     className="bg-leadflow-electric-blue text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-leadflow-deep-navy transition"
                 >
                     Join the Program

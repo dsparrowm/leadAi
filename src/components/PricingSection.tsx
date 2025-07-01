@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const plans = [
     {
         name: "Starter",
@@ -57,14 +59,16 @@ const PricingSection = () => (
                             ))}
                         </ul>
                         {plan.price !== "Contact Us" ? (
-                            <button className="bg-leadflow-electric-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-leadflow-deep-navy transition">Start Free Trial</button>
+                            <Link to="/register">
+                                <button className="bg-leadflow-electric-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-leadflow-deep-navy transition">Start Free Trial</button>
+                            </Link>
                         ) : (
                             <button className="bg-gray-200 text-leadflow-deep-navy px-6 py-2 rounded-lg font-semibold cursor-default">Contact Sales</button>
                         )}
                     </div>
                 ))}
             </div>
-            <p className="text-center text-gray-500 mt-10">All plans include a 14-day free trial. No credit card required.</p>
+            <p className="text-center text-gray-500 mt-10">All plans include a 7-day free trial. No credit card required.</p>
         </div>
     </section>
 );

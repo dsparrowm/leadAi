@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm mb-6 animate-fade-in">
-            <TrendingUp className="w-4 h-4 mr-2" />
+            <TrendingUp className="w-4 h-4 mr-2 text-leadflow-emerald" />
             <span className="text-sm font-medium">AI Agents That Actually Convert</span>
           </div>
 

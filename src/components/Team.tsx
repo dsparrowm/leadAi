@@ -4,15 +4,15 @@ import { Card, CardContent } from "@/components/ui/card";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Chen",
-      role: "CEO & Co-Founder",
+      name: "Davies Ani",
+      role: "CEO & Founder",
       bio: "Former VP of Growth at TechCorp. Led teams that generated $100M+ in pipeline through innovative lead generation strategies.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?auto=format&fit=crop&w=400&h=400",
-      expertise: ["Growth Strategy", "B2B Sales", "Team Leadership"]
+      expertise: ["Software Engineer", "Growth Strategy", "B2B Sales", "Team Leadership"]
     },
     {
       name: "Marcus Rodriguez",
-      role: "CTO & Co-Founder", 
+      role: "CTO",
       bio: "AI researcher with 10+ years at Google and Meta. Expert in machine learning, natural language processing, and scalable systems.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400",
       expertise: ["AI/ML", "System Architecture", "Product Engineering"]
@@ -69,23 +69,23 @@ const Team = () => {
                 <CardContent className="p-0">
                   {/* Image */}
                   <div className="aspect-square overflow-hidden">
-                    <img 
-                      src={member.image} 
+                    <img
+                      src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  
+
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-leadflow-deep-navy mb-1">{member.name}</h3>
                     <p className="text-leadflow-electric-blue font-semibold mb-3">{member.role}</p>
                     <p className="text-leadflow-slate text-sm leading-relaxed mb-4">{member.bio}</p>
-                    
+
                     {/* Expertise Tags */}
                     <div className="flex flex-wrap gap-2">
                       {member.expertise.map((skill, skillIndex) => (
-                        <span 
+                        <span
                           key={skillIndex}
                           className="px-3 py-1 bg-leadflow-electric-blue/10 text-leadflow-electric-blue text-xs font-medium rounded-full"
                         >
