@@ -1,4 +1,5 @@
 // Campaign test placeholder
+/// <reference types="jest" />
 import request from 'supertest';
 import app from '../app';
 import prisma from '../config/database';

@@ -11,13 +11,10 @@ import {
   BarChart3,
   Menu,
   X,
-  Moon,
-  Sun,
   LogOut
 } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useTheme } from "@/contexts/ThemeContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -34,7 +31,6 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: Home },
@@ -88,8 +84,8 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
                   key={item.name}
                   to={item.href}
                   className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive
-                      ? 'bg-primary/10 text-primary border-r-2 border-primary'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+                    ? 'bg-primary/10 text-primary border-r-2 border-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-accent'
                     }`}
                   onClick={() => setSidebarOpen(false)}
                 >
@@ -137,9 +133,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
             </div>
 
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" onClick={toggleTheme}>
-                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </Button>
+              {/* Theme toggle removed - dark mode disabled */}
 
               <Button variant="ghost" size="sm" className="relative">
                 <Bell className="w-5 h-5" />
