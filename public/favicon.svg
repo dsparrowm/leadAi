@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="leadflowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#leadflowGradient)"/>
+  
+  <!-- L and F letters representing LeadFlow -->
+  <g fill="white">
+    <!-- L -->
+    <rect x="7" y="8" width="2" height="12"/>
+    <rect x="7" y="18" width="6" height="2"/>
+    
+    <!-- F -->
+    <rect x="16" y="8" width="2" height="12"/>
+    <rect x="16" y="8" width="6" height="2"/>
+    <rect x="16" y="13" width="5" height="2"/>
+  </g>
+</svg>
